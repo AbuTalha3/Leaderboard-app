@@ -45,3 +45,13 @@ ul {
   display: flex;
   gap: 36px;
 }
+
+.scores ul {
+  border: 2px solid #444;
+  padding: 10px;
+  margin-top: 10px;
+}
+
+.scores ul li{
+  padding: 10px 0;
+}
