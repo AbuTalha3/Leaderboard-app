@@ -1,4 +1,47 @@
 * {
-  color: black;
-  background-color: #f34848;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.score-area form {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.recent-scores {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+ul {
+  list-style: none;
+}
+
+.submit-button {
+  display: flex;
+  justify-content: center;
+  width: 35%;
+  position: absolute;
+  bottom: -25px;
+  right: 0;
+}
+
+.form-area {
+  position: relative;
+}
+
+.container {
+  display: flex;
+  gap: 36px;
 }
