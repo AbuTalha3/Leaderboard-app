@@ -60,8 +60,7 @@ export const displayData = async () => {
     games.forEach((game) => {
       ul.innerHTML += `
         <li class='li'>
-          <p>${game.user}</p>
-          <p>${game.score}</p>
+          <p>${game.user} ${game.score}</p>
         </li>`;
     });
   } catch (error) {
