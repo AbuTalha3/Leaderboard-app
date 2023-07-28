@@ -9,7 +9,7 @@ const getGameId = () => {
       'Content-Type': 'application/json',
     },
     body: JSON.stringify({
-      name: 'shah Game',
+      name: 'Abu Game',
     }),
   })
     .then((response) => response.json())

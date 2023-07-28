@@ -24,8 +24,8 @@ export const postData = (gameId) => {
     });
 };
 
-submit.addEventListener('click', () => {
-  postData(getGameId);
+submit.addEventListener('click', async () => {
+  await postData(getGameId);
 });
 
 export const getData = (getGameId) => {
