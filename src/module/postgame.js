@@ -46,8 +46,7 @@ export const displayData = () => {
       games.forEach((game) => {
         ul.innerHTML += `
           <li class='li'>
-            <p>${game.user}</p>
-            <p>${game.score}</p>
+            <p class="user-score">${game.user}: ${game.score}</p>
           </li>`;
       });
     })
