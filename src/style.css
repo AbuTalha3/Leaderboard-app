@@ -6,7 +6,9 @@
 
 body {
   padding: 2%;
+
   /* height: 100vh; */
+
   /* display: flex;
   justify-content: center;
   align-items: center;
@@ -46,13 +48,13 @@ ul {
   list-style: none;
 }
 
-.li:nth-child(even){
-background-color: rgb(219, 218, 218);
-}
-
 .li {
   font-size: 1.3rem;
   font-weight: 400;
+}
+
+.li:nth-child(even) {
+  background-color: rgb(219, 218, 218);
 }
 
 .user-score {
@@ -78,13 +80,14 @@ background-color: rgb(219, 218, 218);
   display: flex;
   margin-top: 2%;
   margin-left: 3%;
+
   /* justify-content: center;
   align-items: center; */
   gap: 36px;
 }
 
 .scores ul {
-  border: 2px solid #444;;
+  border: 2px solid #444;
   margin-top: 10px;
 }
 
@@ -99,12 +102,13 @@ h3 {
 h1 {
   font-size: 2.5rem;
 }
- input {
+
+input {
   margin-bottom: 4%;
   padding: 2%;
   height: 30px;
- }
+}
 
- .add-score-container {
+.add-score-container {
   margin-bottom: 9%;
- }
+}
