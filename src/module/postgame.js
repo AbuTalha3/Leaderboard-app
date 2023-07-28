@@ -18,15 +18,10 @@ export const postData = (gameId) => {
       score: score.value,
     }),
   })
-  .then((response) => response.json())
-  .then((data) => {
-    console.log('data submitted:', data);
-    return data;
-  })
-  .catch((error) => {
-    console.error('Error occurred:', error);
-    throw error;
-  });
+    .then((response) => response.json())
+    .catch((error) => {
+      throw error;
+    });
 };
 
 submit.addEventListener('click', () => {
@@ -38,7 +33,6 @@ export const getData = (getGameId) => {
   return fetch(url)
     .then((response) => response.json())
     .catch((error) => {
-      console.error('Error occurred:', error);
       throw error;
     });
 };
@@ -59,7 +53,7 @@ export const displayData = () => {
     })
     .catch((error) => {
       // Handle errors, if any
-      console.error('Error occurred:', error);
+      error('Error occurred:', error);
     });
 };
 

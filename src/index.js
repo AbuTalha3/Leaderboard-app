@@ -12,12 +12,12 @@ const getGameId = () => {
       name: 'shah Game',
     }),
   })
-  .then((response) => response.json())
-  .then((game) => {
-    console.log(game);
-    const gameId = game.result.split(': ')[1].replace(' added.', '');
-    localStorage.setItem('gameId', gameId);
-  });
+    .then((response) => response.json())
+    .then((game) => {
+      // console.log(game);
+      const gameId = game.result.split(': ')[1].replace(' added.', '');
+      localStorage.setItem('gameId', gameId);
+    });
 };
 
 if (!localStorage.getItem('gameId')) {
