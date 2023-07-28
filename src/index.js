@@ -1,23 +1,24 @@
 import './style.css';
 import './module/postgame.js';
 
-const getGameId = () => {
+const getGameId = async () => {
   const url = 'https://us-central1-js-capstone-backend.cloudfunctions.net/api/games';
-  return fetch(url, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
-      name: 'Abu Game',
-    }),
-  })
-    .then((response) => response.json())
-    .then((game) => {
-      // console.log(game);
-      const gameId = game.result.split(': ')[1].replace(' added.', '');
-      localStorage.setItem('gameId', gameId);
+  try {
+    const response = await fetch(url, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({
+        name: 'Abu Game',
+      }),
     });
+    const game = await response.json();
+    const gameId = game.result.split(': ')[1].replace(' added.', '');
+    localStorage.setItem('gameId', gameId);
+  } catch (error) {
+    console.error('Error fetching game ID:', error);
+  }
 };
 
 if (!localStorage.getItem('gameId')) {
