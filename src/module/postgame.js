@@ -57,7 +57,7 @@ export const displayData = async () => {
         </li>`;
     });
   } catch (error) {
- // console.error('Error occurred:', error);
+    // console.error('Error occurred:', error);
   }
 };
 
