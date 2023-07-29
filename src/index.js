@@ -17,7 +17,7 @@ const getGameId = async () => {
     const gameId = game.result.split(': ')[1].replace(' added.', '');
     localStorage.setItem('gameId', gameId);
   } catch (error) {
-    console.error('Error fetching game ID:', error);
+    // console.error('Error fetching game ID:', error);
   }
 };
 
