@@ -88,7 +88,7 @@ Run this command:
 ```
 <!-- START APP -->
 ### Start app
-While using app for the first time, Use VS code live server Extensions.
+  npm run start
 
 ### Usage
 
